@@ -38,7 +38,7 @@ document.getElementById('withdraw-btn').addEventListener('click', function () {
     const previousBanlanceTotal = parseFloat(previousBalanceTotalString);
 
     if (newWithdrawAmount > previousBanlanceTotal) {
-        alert('baap er bank e etto taka nai');
+        alert('Not Enough Money, Provide a valid amount!');
         return;
     }
     //Steps - 4

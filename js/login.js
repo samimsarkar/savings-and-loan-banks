@@ -21,6 +21,6 @@ document.getElementById('submit-btn').addEventListener('click', function () {
         window.location.href = "bank.html";
     }
     else {
-        alert('tuke amra tejjo goshona korlam!! tui password bhule gechis');
+        alert('Provide a Valid Email & Password!');
     }
 })

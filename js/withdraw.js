@@ -17,7 +17,10 @@ document.getElementById('withdraw-btn').addEventListener('click', function () {
     const withdrawField = document.getElementById('Withdraw-field');
     const newWithdrawAmountString = withdrawField.value;
     const newWithdrawAmount = parseFloat(newWithdrawAmountString);
-    console.log(newWithdrawAmount);
+
+    // Steps- 7 
+    withdrawField.value = '';
+
     if (isNaN(newWithdrawAmount)) {
         alert('Please Provide a Valid Number');
         return;
@@ -29,8 +32,7 @@ document.getElementById('withdraw-btn').addEventListener('click', function () {
     const previousWithdrawTotalString = withdrawTotalElement.innerText;
     const previousWithdrawTotal = parseFloat(previousWithdrawTotalString);
 
-    // Steps- 7 
-    withdrawField.value = '';
+
 
     //Steps -5
     const balenceTotalElement = document.getElementById('balance-total');
